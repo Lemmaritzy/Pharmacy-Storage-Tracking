@@ -39,7 +39,6 @@ namespace Pharmacy_Storage_Tracking.forms
             this.label3 = new System.Windows.Forms.Label();
             this.t4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.das = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.t6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -113,13 +112,6 @@ namespace Pharmacy_Storage_Tracking.forms
             this.label4.TabIndex = 6;
             this.label4.Text = "Firma";
             // 
-            // das
-            // 
-            this.das.Location = new System.Drawing.Point(23, 644);
-            this.das.Name = "das";
-            this.das.Size = new System.Drawing.Size(265, 38);
-            this.das.TabIndex = 9;
-            // 
             // label5
             // 
             this.label5.Location = new System.Drawing.Point(23, 301);
@@ -190,7 +182,7 @@ namespace Pharmacy_Storage_Tracking.forms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(188, 644);
+            this.button1.Location = new System.Drawing.Point(175, 638);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 50);
             this.button1.TabIndex = 18;
@@ -222,7 +214,6 @@ namespace Pharmacy_Storage_Tracking.forms
             this.Controls.Add(this.label7);
             this.Controls.Add(this.t6);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.das);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.t4);
             this.Controls.Add(this.label4);
@@ -238,7 +229,8 @@ namespace Pharmacy_Storage_Tracking.forms
             this.MinimizeBox = false;
             this.Name = "ilacekle";
             this.ShowIcon = false;
-            this.Text = "ilacekle";
+            this.Text = "İlaç Ekle";
+            this.Load += new System.EventHandler(this.ilacekle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
@@ -253,7 +245,6 @@ namespace Pharmacy_Storage_Tracking.forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox t4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox das;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox t6;
         private System.Windows.Forms.Label label6;

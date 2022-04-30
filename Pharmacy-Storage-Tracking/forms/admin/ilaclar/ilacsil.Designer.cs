@@ -75,7 +75,7 @@ namespace Pharmacy_Storage_Tracking.forms
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ilacsil";
             this.ShowIcon = false;
-            this.Text = "ilacsil";
+            this.Text = "İlaç Sil";
             this.ResumeLayout(false);
             this.PerformLayout();
         }

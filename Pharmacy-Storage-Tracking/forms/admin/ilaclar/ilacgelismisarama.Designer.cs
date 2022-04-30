@@ -78,7 +78,7 @@ namespace Pharmacy_Storage_Tracking.forms
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(474, 358);
+            this.textBox1.Location = new System.Drawing.Point(470, 359);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(275, 38);
             this.textBox1.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace Pharmacy_Storage_Tracking.forms
             this.MinimizeBox = false;
             this.Name = "ilacgelismisarama";
             this.ShowIcon = false;
-            this.Text = "ilacgelismisarama";
+            this.Text = "İlaç Arama";
             this.Load += new System.EventHandler(this.ilacgelismisarama_Load);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -92,7 +92,18 @@ namespace Pharmacy_Storage_Tracking.forms
             conn.Close();
             
         }
-        
+
+        public void ekleme_fatura(string a1,string a2,string a3,string a4)
+        {
+            conn.Open();
+            cmd.Connection = conn;
+            cmd.CommandText = "Insert into faturalar (fatura) values ('"+a1+" isimli ilaç "+a2+" firması tarafınca birim fiyatı "+a3+" olarak "+a4+" ambalaj kadarca  eklenmiştir. Eklenme tarihi= "+DateTime.Now+"') ";
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+        }
+
+       
         public void guncelleme_ilac(string a1,string a2,string a3,string a4,string a5,string a6,string a7,string a8,string a9, int id)
         {
             conn.Open();

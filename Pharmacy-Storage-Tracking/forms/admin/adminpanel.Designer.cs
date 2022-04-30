@@ -35,7 +35,6 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnRapor = new System.Windows.Forms.Button();
             this.btnFatura = new System.Windows.Forms.Button();
             this.btnKullanici = new System.Windows.Forms.Button();
             this.btnİlac = new System.Windows.Forms.Button();
@@ -89,7 +88,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnRapor);
             this.panel1.Controls.Add(this.btnFatura);
             this.panel1.Controls.Add(this.btnKullanici);
             this.panel1.Controls.Add(this.btnİlac);
@@ -108,18 +106,6 @@
             this.label3.TabIndex = 0;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnRapor
-            // 
-            this.btnRapor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRapor.Location = new System.Drawing.Point(0, 345);
-            this.btnRapor.Margin = new System.Windows.Forms.Padding(0);
-            this.btnRapor.Name = "btnRapor";
-            this.btnRapor.Size = new System.Drawing.Size(199, 75);
-            this.btnRapor.TabIndex = 7;
-            this.btnRapor.Text = "Raporlar";
-            this.btnRapor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRapor.UseVisualStyleBackColor = true;
-            // 
             // btnFatura
             // 
             this.btnFatura.Dock = System.Windows.Forms.DockStyle.Top;
@@ -131,6 +117,7 @@
             this.btnFatura.Text = "Faturalar";
             this.btnFatura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFatura.UseVisualStyleBackColor = true;
+            this.btnFatura.Click += new System.EventHandler(this.btnFatura_Click);
             // 
             // btnKullanici
             // 
@@ -143,6 +130,7 @@
             this.btnKullanici.Text = "Kullanıcılar";
             this.btnKullanici.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKullanici.UseVisualStyleBackColor = true;
+            this.btnKullanici.Click += new System.EventHandler(this.btnKullanici_Click);
             // 
             // btnİlac
             // 
@@ -304,7 +292,6 @@
 
         private System.Windows.Forms.Label label3;
 
-        private System.Windows.Forms.Button btnRapor;
         private System.Windows.Forms.Panel panel3;
 
         private System.Windows.Forms.Button btnİlac;

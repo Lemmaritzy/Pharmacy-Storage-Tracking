@@ -24,12 +24,17 @@ namespace Pharmacy_Storage_Tracking.forms
             {
                 ilaclar i = new ilaclar();
                 i.ekleme_ilac(t1.Text,t2.Text,t3.Text,t4.Text,t5.Text,t6.Text,t7.Text,t8.Text,t9.Text);
+                i.ekleme_fatura(t1.Text,t4.Text,t5.Text,t9.Text);
                 temizle();
                 this.Hide();
                 
             }
             
             
+        }
+
+        private void ilacekle_Load(object sender, EventArgs e)
+        {
         }
     }
 }

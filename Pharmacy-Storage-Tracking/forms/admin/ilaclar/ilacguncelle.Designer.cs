@@ -248,7 +248,7 @@ namespace Pharmacy_Storage_Tracking.forms
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ilacguncelle";
             this.ShowIcon = false;
-            this.Text = "ilacguncelle";
+            this.Text = "İlaç Güncelle";
             this.Load += new System.EventHandler(this.ilacguncelle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

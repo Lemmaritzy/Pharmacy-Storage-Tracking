@@ -102,61 +102,96 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
-        </Compile>
-        <Compile Include="forms\ilacekle.cs">
+        <Compile Include="forms\admin\adminpanel.cs">
           <SubType>Form</SubType>
         </Compile>
-        <Compile Include="forms\ilacekle.Designer.cs">
+        <Compile Include="forms\admin\adminpanel.Designer.cs">
+          <DependentUpon>adminpanel.cs</DependentUpon>
+        </Compile>
+        <Compile Include="forms\admin\faturalar\fatura.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="forms\admin\faturalar\fatura.Designer.cs">
+          <DependentUpon>fatura.cs</DependentUpon>
+        </Compile>
+        <Compile Include="forms\admin\ilaclar\ilacekle.cs" />
+        <Compile Include="forms\admin\ilaclar\ilacekle.Designer.cs">
           <DependentUpon>ilacekle.cs</DependentUpon>
         </Compile>
-        <Compile Include="forms\ilacgelismisarama.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="forms\ilacgelismisarama.Designer.cs">
+        <Compile Include="forms\admin\ilaclar\ilacgelismisarama.cs" />
+        <Compile Include="forms\admin\ilaclar\ilacgelismisarama.Designer.cs">
           <DependentUpon>ilacgelismisarama.cs</DependentUpon>
         </Compile>
-        <Compile Include="forms\ilacguncelle.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="forms\ilacguncelle.Designer.cs">
+        <Compile Include="forms\admin\ilaclar\ilacguncelle.cs" />
+        <Compile Include="forms\admin\ilaclar\ilacguncelle.Designer.cs">
           <DependentUpon>ilacguncelle.cs</DependentUpon>
         </Compile>
-        <Compile Include="forms\ilaclar.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="forms\ilaclar.Designer.cs">
+        <Compile Include="forms\admin\ilaclar\ilaclar.cs" />
+        <Compile Include="forms\admin\ilaclar\ilaclar.Designer.cs">
           <DependentUpon>ilaclar.cs</DependentUpon>
         </Compile>
-        <Compile Include="forms\ilacsil.cs">
+        <Compile Include="forms\admin\ilaclar\ilacsil.cs" />
+        <Compile Include="forms\admin\ilaclar\ilacsil.Designer.cs">
+          <DependentUpon>ilacsil.cs</DependentUpon>
+        </Compile>
+        <Compile Include="forms\admin\kullanıcılar\users.cs">
           <SubType>Form</SubType>
         </Compile>
-        <Compile Include="forms\ilacsil.Designer.cs">
-          <DependentUpon>ilacsil.cs</DependentUpon>
+        <Compile Include="forms\admin\kullanıcılar\users.Designer.cs">
+          <DependentUpon>users.cs</DependentUpon>
+        </Compile>
+        <Compile Include="forms\üye\ilaclarUye.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="forms\üye\ilaclarUye.Designer.cs">
+          <DependentUpon>ilaclarUye.cs</DependentUpon>
+        </Compile>
+        <Compile Include="giris.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="giris.Designer.cs">
+          <DependentUpon>giris.cs</DependentUpon>
+        </Compile>
+        <Compile Include="kayit.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="kayit.Designer.cs">
+          <DependentUpon>kayit.cs</DependentUpon>
         </Compile>
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <EmbeddedResource Include="Form1.resx">
-          <DependentUpon>Form1.cs</DependentUpon>
+        <EmbeddedResource Include="forms\admin\adminpanel.resx">
+          <DependentUpon>adminpanel.cs</DependentUpon>
         </EmbeddedResource>
-        <EmbeddedResource Include="forms\ilacekle.resx">
+        <EmbeddedResource Include="forms\admin\faturalar\fatura.resx">
+          <DependentUpon>fatura.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="forms\admin\ilaclar\ilacekle.resx">
           <DependentUpon>ilacekle.cs</DependentUpon>
         </EmbeddedResource>
-        <EmbeddedResource Include="forms\ilacgelismisarama.resx">
+        <EmbeddedResource Include="forms\admin\ilaclar\ilacgelismisarama.resx">
           <DependentUpon>ilacgelismisarama.cs</DependentUpon>
         </EmbeddedResource>
-        <EmbeddedResource Include="forms\ilacguncelle.resx">
+        <EmbeddedResource Include="forms\admin\ilaclar\ilacguncelle.resx">
           <DependentUpon>ilacguncelle.cs</DependentUpon>
         </EmbeddedResource>
-        <EmbeddedResource Include="forms\ilaclar.resx">
+        <EmbeddedResource Include="forms\admin\ilaclar\ilaclar.resx">
           <DependentUpon>ilaclar.cs</DependentUpon>
         </EmbeddedResource>
-        <EmbeddedResource Include="forms\ilacsil.resx">
+        <EmbeddedResource Include="forms\admin\ilaclar\ilacsil.resx">
           <DependentUpon>ilacsil.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="forms\admin\kullanıcılar\users.resx">
+          <DependentUpon>users.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="forms\üye\ilaclarUye.resx">
+          <DependentUpon>ilaclarUye.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="giris.resx">
+          <DependentUpon>giris.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="kayit.resx">
+          <DependentUpon>kayit.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
